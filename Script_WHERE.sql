@@ -69,7 +69,7 @@ FROM CAT
 WHERE OWNER_NAME NOT LIKE 'П%'
 ORDER BY CAT_NAME;
 
-/*Выбрать из таблицы CATS все данные для всех котов, у которых в имени нет буквы “т”, отсортировать по имени.*/
+/*Выбрать из таблицы CATS все данные для всех котов, у которых в имени нет буквы “т”, отсортировать по имени.   r*/
 SELECT ID, CAT_NAME, GENDER, AGE, COLOR, TOY, OWNER_NAME
 FROM CAT
 WHERE lower(CAT_NAME) NOT LIKE '%т%'
